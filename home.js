@@ -41,7 +41,7 @@ function renderTasks() {
             <span style="margin-left:10px; ${task.completed ? "text-decoration: line-through; color: gray;" : ""}">
                 ${task.text}
             </span>
-            <button class="remove-btn" onclick="removeTask(${index})" style="margin-left:10px;">Xoa</button>
+            <button class="remove-btn" onclick="removeTask(${index})" style="margin-left:10px;"> Xoáa </button>
         `;
         list.appendChild(li);
     });

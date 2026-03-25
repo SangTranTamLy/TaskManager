@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #0008ff;
+    --khung-color: #00bbff;
+    --text-color: white;
+    --type-border: #0056b3;
+    --type-shadow: #0056b3;
+}
+body {
+    background-color: lightblue;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.all {
+    font-size: 20px;
+    justify-items: center;
+    background-color: white;
+    position: relative;
+    width: 500px;
+    height: 380px;
+    left: 700px;
+    top: 200px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.29);
+    border-radius: 10px;
+}
+.Note {
+    font-size: 24px;
+    padding-top: 200px;
+    margin-left: 700px;
+}
+h1 {
+    text-align: center;
+    padding-top: 55px;
+    color: var(--primary-color);
+}
+
+.all-TypeInput {
+    display: flex; 
+}
+ul {
+    font-size: 20px;
+  list-style: none;    /* loại bỏ dấu chấm đầu dòng */
+  max-height: 160px;   /* chiều cao tối đa */
+  overflow-y: auto;    /* bật scroll dọc */
+  padding-right: 25px;  /* tránh bị che chữ */
+}
+/* thanh cuộn đẹp */
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.khung {
+    background-color: var(--khung-color);
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 -20px 0 20px;
+    transition: 0.3s;
+}
+.khung:hover {
+    background-color: #0008ff;
+}
+
+/* Input box styling */
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #1a73e8; /* Updated border color */
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--type-border); /* Darker focus border */
+    box-shadow: 0 0 5px var(--type-shadow);
+}
+
+/*button remove*/
+li .remove-btn {
+    background-color: hsla(0, 0%, 0%, 0.299); /* Red color for remove button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+li .remove-btn:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}

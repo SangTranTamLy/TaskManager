@@ -5,6 +5,7 @@
     --type-border: #0056b3;
     --type-shadow: #0056b3;
 }
+
 body {
     background-color: lightblue;
     font-family: "Times New Roman", Times, serif;
@@ -22,11 +23,13 @@ body {
     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.29);
     border-radius: 10px;
 }
+
 .Note {
     font-size: 24px;
     padding-top: 200px;
     margin-left: 700px;
 }
+
 h1 {
     text-align: center;
     padding-top: 55px;
@@ -34,23 +37,24 @@ h1 {
 }
 
 .all-TypeInput {
-    display: flex; 
+    display: flex;
 }
+
 ul {
     font-size: 20px;
-  list-style: none;    /* loại bỏ dấu chấm đầu dòng */
-  max-height: 160px;   /* chiều cao tối đa */
-  overflow-y: auto;    /* bật scroll dọc */
-  padding-right: 25px;  /* tránh bị che chữ */
+    list-style: none;
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 25px;
 }
-/* thanh cuộn đẹp */
+
 ul::-webkit-scrollbar {
-  width: 6px;
+    width: 6px;
 }
 
 ul::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+    background: #888;
+    border-radius: 10px;
 }
 
 .khung {
@@ -63,29 +67,28 @@ ul::-webkit-scrollbar-thumb {
     margin: 0 -20px 0 20px;
     transition: 0.3s;
 }
+
 .khung:hover {
     background-color: #0008ff;
 }
 
-/* Input box styling */
 input[type="text"] {
     width: 70%;
     padding: 12px;
     font-size: 1rem;
     border-radius: 8px;
-    border: 2px solid #1a73e8; /* Updated border color */
+    border: 2px solid #1a73e8;
     outline: none;
     transition: 0.3s;
 }
 
 input[type="text"]:focus {
-    border-color: var(--type-border); /* Darker focus border */
+    border-color: var(--type-border);
     box-shadow: 0 0 5px var(--type-shadow);
 }
 
-/*button remove*/
 li .remove-btn {
-    background-color: hsla(0, 0%, 0%, 0.299); /* Red color for remove button */
+    background-color: hsla(0, 0%, 0%, 0.299);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -96,5 +99,5 @@ li .remove-btn {
 }
 
 li .remove-btn:hover {
-    background-color: #b71c1c; /* Darker red on hover */
+    background-color: #b71c1c;
 }
